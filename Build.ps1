@@ -7,7 +7,7 @@ New-Item -ItemType Directory -Force -Path $OutputDirectory | Out-Null
 $sources = @('Gosterge.cs','Kota.cs','Yerlesim.cs','Dil.cs','AssemblyInfo.cs') | ForEach-Object { Join-Path $PSScriptRoot "Source\$_" }
 $references = @('System.Windows.Forms.dll','System.Drawing.dll','System.Web.Extensions.dll',
  (Join-Path $framework 'WPF\UIAutomationClient.dll'), (Join-Path $framework 'WPF\UIAutomationTypes.dll'), (Join-Path $framework 'WPF\WindowsBase.dll'))
-$arguments = @('/nologo','/target:winexe','/platform:x64','/optimize+',('/out:' + (Join-Path $OutputDirectory 'KullanimGostergesi.exe')))
+$arguments = @('/nologo','/codepage:65001','/target:winexe','/platform:x64','/optimize+',('/out:' + (Join-Path $OutputDirectory 'KullanimGostergesi.exe')))
 $arguments += $references | ForEach-Object { '/reference:' + $_ }
 & $compiler @arguments @sources
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed.' }
