@@ -1,0 +1,28 @@
+MINI KOTA — v3 YAYIN ÖNCESİ İNCELEME
+23 Ekim 2026
+
+MIT lisansı kullanıcı onayıyla etkin: Copyright (c) 2026 arcah.
+Yerel hazırlık tamamlandı; kamuya yayın ve başvuru yapılmadı.
+Dört özgün davranış dosyası önceki paketle SHA256 olarak birebir aynı.
+Yalnız AssemblyInfo.cs eklendi ve Build.ps1 bu dosyayı derleyecek şekilde güncellendi.
+Ürün: Mini Kota Göstergesi. Ürün/dosya sürümü: 1.0.2.0.
+Derleme: başarılı; bilinen CS0649 TestMode uyarısı mevcut.
+İmza: NotSigned. EXE çalıştırılmadı; kaynak teslim arşivine eklenmedi.
+Yerel derleme EXE SHA256: E5A8988DB42D8F8FBD7736FF9295446F8A09485A892D550A67D0D1AA358BF852
+Kısayol SHA256: 35CC8971E87924378FEC6B06B376DBF4C57CE1E64ED675A7C8B966387DE15580 (önceki değerle aynı).
+
+Eklenenler: etkin LICENSE, ürün/sürüm bilgileri, gizlilik ve kaldırma açıklaması,
+imzalama politikası, ilk sürüm açıklaması, güncel başvuru kontrol listesi.
+Politikadaki arcah rolleri öneridir; telif adı hesap kimliği doğrulaması değildir.
+CI yalnız derleme taslağıdır; GitHub'da çalıştırılmadı. İmza/artefakt teslimi
+kabulden sonra güncel resmi şemayla hazırlanacaktır.
+
+Canlı kota, açılış/kapanış, AppHang, uzun çalışma, DPI ve çoklu monitör testleri
+henüz uygulanmadı. İkinci inceleme dosyasındaki test planı halen geçerlidir;
+o dosyadaki lisans/metadata eksikleri v2'nin tarihsel durumudur.
+
+Sonraki karar: bu paketin kamuya açık kaynak deposu ve açıkça imzasız/test edilmemiş
+olarak etiketli ilk ikili sürümünün yayını. Depo adı/hesabı ve rol bağlantıları
+bundan sonra netleşebilir. SignPath başvurusu ayrıca onaya sunulmalıdır.
+Başvuru kabulü garanti değildir. Güvenlik ayarı, sertifika deposu, hesaplar,
+sohbetler, yerleşik ayarlar ve mevcut kısayol hedefi değiştirilmedi.
