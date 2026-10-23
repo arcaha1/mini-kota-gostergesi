@@ -1,0 +1,10 @@
+build/
+*.exe
+*.dll
+*.pfx
+*.p12
+*.cer
+*.key
+.env
+*.log
+*.zip
