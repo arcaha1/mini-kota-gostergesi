@@ -1,0 +1,61 @@
+TARİHSEL İNCELEME: Aşağıdaki notlar v2 paketine aittir. Güncel durum INCELEME-RAPORU.txt dosyasındadır. Test senaryoları halen geçerlidir.
+
+MINI KOTA — İKİNCİ İNCELEME VE TEST PLANI
+23 Ekim 2026
+
+Durum: Hazırlık devam ediyor; yayın ve imzalama için hazır kabul edilmez.
+Özgün paket SHA256: 3C4A2D7978E993CDF1616279B3CC06665D06D72A4F580ADC203E498719346230
+Manifestteki 13 dosya yeniden kontrol edildi: tamamı eşleşti.
+Dört C# kaynağı, derleme ve CI taslağı okundu. Kişisel kullanıcı yolu,
+parola/anahtar ataması ve yaygın token kalıpları taramasında eşleşme bulunmadı.
+Bu inceleme tüm olası sırların yokluğunu matematiksel olarak kanıtlamaz.
+Uygulama kaynağı değiştirilmedi, çalıştırılmadı; önceki derleme sonucu yeniden
+çalıştırılmış test olarak sunulmaz. Özgün paket korunarak bu klasöre kopyalandı.
+
+RESMİ KOŞULLARA GÖRE KALANLAR
+Kaynak: https://signpath.org/terms.html (23 Ekim 2026 kontrolü)
+1. OSI onaylı lisans ve telif sahibi kesinleşmeli. MIT halen yalnız öneri.
+2. Açık depo ve imzalanacak biçimde yayımlanmış sürüm gerekli. Salt kaynak ZIP'i
+   bu gereği tek başına karşılamaz. İlk ikili sürümün imzasız olduğu açık yazılmalı.
+3. Çalıştırılabilir projeler için doğrulanabilir itibar/geçmiş aranıyor; yeni depo
+   ve ilk yayın kabul garantisi sağlamıyor. Başvuru kararı hizmete ait.
+4. Ürün adı ve tutarlı ürün sürümü tüm imzalanan ikililerde bulunmalı ve SignPath
+   metadata restrictions ile uygulanmalı. Mevcut dört kaynakta AssemblyProduct,
+   AssemblyVersion ve AssemblyFileVersion tanımı yok. Bunlar eklenip derlenmiş
+   dosyada doğrulanmadan imzalama uygunluğu tamamlanmış sayılmaz.
+5. Politika sayfası ana sayfa ve sürüm/indirme sayfasından bağlantılı olmalı;
+   gerçek kişi rolleri, MFA ve her sürüme manuel imza onayı belirlenmeli.
+6. Kurulum anlatılıyorsa kaldırma anlatımı da eklenmeli: uygulamadan çıkış,
+   yalnız uygulama klasörü/kısayolunun kaldırılması; dil/karşılama tercihlerinin
+   isteğe bağlı temizlenmesi. Codex hesap ve ayarlarına dokunulmamalı.
+7. Gizlilik açıklaması, Codex'in etkileyen hizmet/gizlilik koşullarına bağlantı
+   içermeli. Kabul öncesinde SignPath imzası varmış gibi atıf kullanılmamalı.
+8. CI taslağı yalnız derliyor; kanıtlanabilir artefakt teslimi ve imza entegrasyonu
+   henüz yok. Kabulden sonra resmi şemayla hazırlanıp ayrıca doğrulanmalı.
+
+TEST PLANI — HENÜZ UYGULANMADI
+A. Yayın öncesi: kaynak incelemesi, lisans kararı, ürün/sürüm metadata kontrolü;
+   derleme; kota ayrıştırmada boş/geçersiz/eski yanıt ve iki pencere senaryoları.
+B. İmzalı dosya: Authenticode zinciri, yayıncı, zaman damgası, SHA256 ve kaynak
+   commit/CI kaydı eşleşmeli. Geçerli imza tek başına bu bilgisayardaki Windows
+   ilkesinin dosyaya izin vereceğini garanti etmez.
+C. Mevcut güvenlik ayarlarıyla doğrudan ilk açılış; CodeIntegrity olayları ve
+   hata kaydı kontrolü. Engellenirse istisna eklemek veya korumayı aşmak yerine
+   durumu raporla. Kısayol hedefini henüz değiştirme.
+D. Gerçek kota: resmi kullanım sayfasıyla aynı pencereleri karşılaştır; ilk
+   sorgu, 60 saniyelik yenileme, ağ kesintisi ve 120 saniye eskime davranışı.
+E. Arayüz: TR/EN geçişi ve yeniden açılışta kalıcılık; ChatGPT açık/kapalı
+   görünürlüğü, DPI ve çoklu monitör; tekrarlı başlatmada tek örnek.
+F. Kararlılık: en az iki saat çalışma; sorgu sürerken ve normal durumda 10'ar
+   kapanış/açılış; donma ve yetim app-server süreci kontrolü. Kabuk erişilebilirlik
+   sorgusunda zaman aşımı olmaması ve kapanıştaki süreç beklemesi ayrıca izlenmeli.
+   Önceki AppHangB1 kaydı bu plan hazırlanarak çözülmüş sayılmaz.
+G. Bu kontroller başarılıysa, kullanıcı kapsamındaki onaya göre kısayolu yedekle,
+   imzalı sürüme yönlendir ve masaüstü kısayolundan son açılışı doğrula.
+
+KARAR GEREKTİREN SONRAKİ AŞAMA
+Telif sahibi adı ve lisans kararı kullanıcıdan gelmeli. Herkese açık depo/ikili
+sürüm yayını ve SignPath başvurusu mevcut kapsamda onaylı değil. Bu belgenin
+hazırlanması bunlara izin oluşturmaz. Hesap açılmadı, push/yayın/başvuru yapılmadı,
+sertifika eklenmedi, güvenlik ilkesi veya mevcut masaüstü kısayolu değiştirilmedi.
+
